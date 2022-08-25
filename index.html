@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
+    <title>E-commerce product page</title>
+</head>
+<body class="md:mx-24">
+    <header class="flex justify-between py-4 md:py-6 items-center md:border-b border-black-500 md:mb-16 ">
+        <div class="flex items-center md:hidden text-4xl font-bold ">
+            <button class=" duration-300"
+                onclick="toggleMenu()">
+                &#9776;
+            </button>
+        </div>
+        <div class="navs flex relative ">
+            <div> <img src=".\images\logo.svg" alt="logo"></div>
+            <ul id="menu" class=" hidden fixed  top-0 left-0   bg-white  md:relative md:flex md:flex-row px-10 py-16  z-50 md:p-0  md:space-x-6 ">
+                <li class="md:hidden z-90 fixed top-3 left-8 ">
+                    <a href="javascript:void(0)" class="text-right  text-4xl"
+                        onclick="toggleMenu()">&times;</a>
+                </li>
+                <li class="nav_items">Collections</li>
+                <li class="nav_items">Men</li>
+                <li class="nav_items">Women</li>
+                <li class="nav_items">About</li>
+                <li class="nav_items">Contact</li>
+            </ul>
+        </div>
+        <div class="profile flex space-x-3 items-center md:space-x-9">
+            <div class="cart"> <img class="h-6 " src=".\images\icon-cart.svg" alt="cart"></div>
+            <div class="avatar "><img class="h-6 md:h-12" src=".\images\image-avatar.png" alt="avatar"></div>
+        </div>
+
+    </header>
+    <section id="carousels" class="carousel slide relative" data-bs-ride="carousel">
+        <div class="carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-4">
+            <button
+            type="button"
+            data-bs-target="#carousels"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carousels"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carousels"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+          <button
+          type="button"
+          data-bs-target="#carousels"
+          data-bs-slide-to="3"
+          aria-label="Slide 4"
+        ></button>
+        </div>
+        <div class="overflow-hidden">
+            <div class= "lg:w-96 hidden md:block  "><img class="rounded-lg " src=".\images\image-product-1.jpg" alt=""></div>
+            <div class=" overflow-hidden relative   lg:w-96 lg:flex gap-x-3 lg:mt-4">
+                <div class="carousel-item active float-left w-full hidden md:block "><img class="rounded-lg block w-full " src=".\images\image-product-1.jpg" alt=""></div>
+                <div  class="carousel-item  relative float-left w-full  "  > <img class="rounded-lg block w-full " src=".\images\image-product-2.jpg" alt=""></div>
+                <div   class="carousel-item  relative float-left w-full " > <img class="rounded-lg block w-full " src=".\images\image-product-3.jpg" alt=""></div>
+                <div  class=" carousel-item  relative float-left w-full" > <img class="rounded-lg block w-full" src=".\images\image-product-4.jpg" alt=""></div>
+            </div>
+        </div>
+        <button
+            class="carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0 md:hidden"
+            type="button"
+            data-bs-target="#carousels"
+            data-bs-slide="prev"
+        >
+            <span class="carousel-control-prev-icon inline-block bg-no-repeat" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+            class="carousel-control-next absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0 md:hidden"
+            type="button"
+            data-bs-target="#carousels"
+            data-bs-slide="next"
+        >
+            <span class="carousel-control-next-icon inline-block bg-no-repeat" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+        
+        
+        
+        
+    </section>
+
+    <script>
+        var menu = document.getElementById('menu');
+        function toggleMenu() {
+            menu.classList.toggle('hidden');
+            menu.classList.toggle('w-1/2');
+            menu.classList.toggle('h-screen');
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+    
+</body>
+</html>
