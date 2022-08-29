@@ -45,7 +45,8 @@ Users should be able to:
 - CSS custom properties
 - Flexbox
 - Javascript
-- [tailwindcss](https://tailwindcss.com/) - Tilwind CSS- [tailwindelements](https://tailwind-elements.com/)- Tailwind Element
+- [tailwindcss](https://tailwindcss.com/) 
+- Tailwind CSS- [tailwindelements](https://tailwind-elements.com/)- Tailwind Element
 
 
 <!-- 
